@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimelis Agito - Full Stack Developer & ML Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: linear-gradient(45deg, transparent 33.33%, #f8f9fa 33.33%, #f8f9fa 66.66%, transparent 66.66%);
+            background-size: 30px 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #1a237e;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-container {
+            margin-top: 2rem;
+        }
+
+        .skills-category {
+            margin-bottom: 2rem;
+        }
+
+        .skills-category h3 {
+            color: #0d47a1;
+            margin-bottom: 1rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: #1a237e;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid #e0e0e0;
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            background: white;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            color: #1a237e;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            text-align: center;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .contact-info a {
+            color: #1a237e;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #0d47a1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Shimelis Agito</h1>
+        <p>Full Stack Developer | ML Engineer | Blockchain Developer</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <p>I am a versatile software developer with expertise in full-stack development, machine learning, and blockchain technology. With a passion for creating innovative solutions, I combine technical expertise with creative problem-solving to deliver high-quality software products.</p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Web Development</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Neural Networks</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Other Technologies</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Blockchain</span>
+                        <span class="skill-tag">App Development</span>
+                        <span class="skill-tag">Software Development</span>
+                        <span class="skill-tag">Smart Contracts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Machine Learning Project</h3>
+                    <p>Advanced ML model implementation for predictive analytics using Python and TensorFlow.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Blockchain Application</h3>
+                    <p>Decentralized application (DApp) built with Ethereum smart contracts and Web3 integration.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Full Stack Web Application</h3>
+                    <p>Modern web application built with React, Node.js, and RESTful APIs.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-info">
+            <h2>Contact Me</h2>
+            <p>Email: jonn90842@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/shima10-sudo">github.com/shima10-sudo</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/https://et.linkedin.com/in/shimelis-agito-b72776298">linkedin.com/in/https://et.linkedin.com/in/shimelis-agito-b72776298</a></p>
+        </section>
+    </div>
+</body>
+</html>
